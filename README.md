@@ -80,12 +80,12 @@ To differentiate between various devices in XAML, we can use **OnPlatform** tag:
 </ContentPage.Padding>
 ```
 In code-behinnd, we can use **Device.RuntimePlatform** method:
-```csharp 
+```csharp
 switch(Device.RuntimePlatform)
 {
     case Device.iOS:
-      return new Thickness(5, 5, 5, 0)
+      return new Thickness(5, 5, 5, 0);
     default:
-      return new Thickness(5, 5, 5, 0)
+      return new Thickness(5, 5, 5, 0);
  }
 ```
