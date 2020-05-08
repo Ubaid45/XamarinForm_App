@@ -87,5 +87,5 @@ switch(Device.RuntimePlatform)
       return new Thickness(5, 5, 5, 0);
     default:
       return new Thickness(5, 5, 5, 0);
- }
+}
 ```
