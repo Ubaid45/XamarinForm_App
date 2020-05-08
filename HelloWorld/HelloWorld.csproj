@@ -14,4 +14,15 @@
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="StackedPage.xaml.cs">
+      <DependentUpon>StackedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="StackPage.xaml.cs">
+      <DependentUpon>StackPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="StackedPage.xaml" />
+  </ItemGroup>
 </Project>
