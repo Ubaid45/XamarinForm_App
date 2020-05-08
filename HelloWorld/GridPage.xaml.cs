@@ -11,7 +11,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            var grid = new Grid
+            /* var grid = new Grid
             {
                 RowSpacing = 20,
                 ColumnSpacing = 40
@@ -37,7 +37,7 @@ namespace HelloWorld
             grid.RowDefinitions.Add(new RowDefinition
             {
                 Height = new GridLength(1, GridUnitType.Auto)
-            });
+            }); */
         }
     }
 }
