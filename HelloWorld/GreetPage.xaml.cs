@@ -8,6 +8,7 @@ namespace HelloWorld
         public GreetPage()
         {
             InitializeComponent();
+
             slider.Value = 0.5;
         }
 
