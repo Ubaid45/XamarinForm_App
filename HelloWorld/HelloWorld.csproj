@@ -21,8 +21,17 @@
     <Compile Update="StackPage.xaml.cs">
       <DependentUpon>StackPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Exercises\AbsoluteLayout_Exercise2.xaml.cs">
+      <DependentUpon>AbsoluteLayout_Exercise2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Exercises\AbsoluteLayout_Exercise1.xaml.cs">
+      <DependentUpon>AbsoluteLayout_Exercise1.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exercises\" />
   </ItemGroup>
 </Project>

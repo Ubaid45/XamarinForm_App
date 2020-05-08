@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using HelloWorld.Exercises;
+using Xamarin.Forms;
 
 namespace HelloWorld
 {
@@ -8,7 +9,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new AbsolutePage();
+            MainPage = new AbsoluteLayout_Exercise1();
         }
 
         protected override void OnStart()
