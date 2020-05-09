@@ -38,5 +38,12 @@
     <Folder Include="Exercises\Grid Layout\" />
     <Folder Include="Exercises\XAML Essentials\" />
     <Folder Include="Exercises\Relative Layout\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
 </Project>
