@@ -3,18 +3,16 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HelloWorld.ListViewPage">
+    <StackLayout Padding="0, 50,0, 0">
+        <SearchBar Placeholder="Search ..." TextChanged="SearchBar_TextChanged"/>
+        <ListView x:Name="listView">
+           <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Status}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+       </ListView>
 
-   <ListView x:Name="listView" IsPullToRefreshEnabled="True" Refreshing="listView_Refreshing">
-       <ListView.ItemTemplate>
-           <DataTemplate>
-               <TextCell Text="{Binding Name}" Detail="{Binding Status}">
-                   <TextCell.ContextActions>
-                       <MenuItem Text="Call" Clicked="Call_Clicked" CommandParameter="{Binding .}"/>
-                       <MenuItem Text="Delete" Clicked="Delete_Clicked" IsDestructive="True" CommandParameter="{Binding .}"/>
-                   </TextCell.ContextActions>
-               </TextCell>
-           </DataTemplate>
-       </ListView.ItemTemplate>
-   </ListView>
-
+    </StackLayout>
+ 
 </ContentPage>
