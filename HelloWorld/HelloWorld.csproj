@@ -24,6 +24,9 @@
     <Compile Update="RelativePage.xaml.cs">
       <DependentUpon>RelativePage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Exercises\Relative Layout\RelativeLayout_Exercise.xaml.cs">
+      <DependentUpon>RelativeLayout_Exercise.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
@@ -34,5 +37,6 @@
     <Folder Include="Exercises\Stack Layout\" />
     <Folder Include="Exercises\Grid Layout\" />
     <Folder Include="Exercises\XAML Essentials\" />
+    <Folder Include="Exercises\Relative Layout\" />
   </ItemGroup>
 </Project>

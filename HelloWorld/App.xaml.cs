@@ -1,5 +1,6 @@
 ﻿using HelloWorld.Exercises.AbsoluteLayout;
 using HelloWorld.Exercises.GridLayout;
+using HelloWorld.Exercises.RelativeLayout;
 using HelloWorld.Exercises.StackLayout;
 using HelloWorld.Exercises.XAMLEssentials;
 using Xamarin.Forms;
@@ -12,7 +13,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new RelativePage();
+            MainPage = new RelativeLayout_Exercise();
         }
 
         protected override void OnStart()
