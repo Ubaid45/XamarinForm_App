@@ -5,13 +5,11 @@ using Xamarin.Forms;
 
 namespace HelloWorld
 {
-    public partial class ImagePage : ContentPage
+    public partial class RoundedImage : ContentPage
     {
-        public ImagePage()
+        public RoundedImage()
         {
             InitializeComponent();
-
-            image.Source = ImageSource.FromResource("HelloWorld.Images.background.jpg");
         }
     }
 }

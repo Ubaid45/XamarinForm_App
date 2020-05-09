@@ -13,7 +13,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new ImagePage();
+            MainPage = new RoundedImage();
         }
 
         protected override void OnStart()
