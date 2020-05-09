@@ -29,5 +29,6 @@
     <Folder Include="Exercises\" />
     <Folder Include="Exercises\Absolute Layout\" />
     <Folder Include="Exercises\Stack Layout\" />
+    <Folder Include="Exercises\Grid Layout\" />
   </ItemGroup>
 </Project>
