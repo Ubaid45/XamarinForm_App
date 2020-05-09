@@ -71,7 +71,8 @@ When **BindingContext** applied to a container element, it’ll be inherited by 
 </StackLayout>
 ```
 ## Dealing with Device Differences
-To differentiate between various devices in XAML, we can use **OnPlatform** tag:
+### In XAML:
+To differentiate between various devices, we can use **OnPlatform** tag:
 ```html
  <ContentPage.Padding>
     <OnPlatform x:TypeArguments="Thickness">
@@ -79,7 +80,8 @@ To differentiate between various devices in XAML, we can use **OnPlatform** tag:
     </OnPlatform>
 </ContentPage.Padding>
 ```
-In code-behinnd, we can use **Device.RuntimePlatform** method:
+## In Code:
+We can use **Device.RuntimePlatform** method:
 ```csharp
 switch(Device.RuntimePlatform)
 {
