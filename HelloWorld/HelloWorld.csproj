@@ -43,6 +43,7 @@
     <Folder Include="Markup Extensions\" />
     <Folder Include="Exercises\Images\" />
     <Folder Include="Models\" />
+    <Folder Include="Exercises\List\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />
