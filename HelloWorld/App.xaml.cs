@@ -1,6 +1,7 @@
 ﻿using HelloWorld.Exercises.AbsoluteLayout;
 using HelloWorld.Exercises.GridLayout;
 using HelloWorld.Exercises.StackLayout;
+using HelloWorld.Exercises.XAMLEssentials;
 using Xamarin.Forms;
 
 namespace HelloWorld
@@ -11,7 +12,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new GridLayout_Exercise2();
+            MainPage = new QuotesPage();
         }
 
         protected override void OnStart()

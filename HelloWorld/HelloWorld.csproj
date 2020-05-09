@@ -30,5 +30,6 @@
     <Folder Include="Exercises\Absolute Layout\" />
     <Folder Include="Exercises\Stack Layout\" />
     <Folder Include="Exercises\Grid Layout\" />
+    <Folder Include="Exercises\XAML Essentials\" />
   </ItemGroup>
 </Project>
