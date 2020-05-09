@@ -12,7 +12,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new QuotesPage();
+            MainPage = new RelativePage();
         }
 
         protected override void OnStart()
