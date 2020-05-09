@@ -9,7 +9,7 @@
 ## Handling Events
 ### In XAML:
 ```html
-<Button Clicked=“Handle_Clicked” />
+<Button Clicked="Handle_Clicked" />
 ```
 ### In Code behind:
 ```csharp
@@ -18,14 +18,14 @@ private void Handle_Clicked (object source, EventArgs e){}
 ## Names
 We use **x:Name** attribute to assign an identifier to an element. This will generate a private field that we can access in code-behind or XAML:
 ```html
-<Slider x:Name=“slider” />
+<Slider x:Name="slider" />
 ```
 
 ## Property Element Syntax
 We use property element syntax to assign complex objects to attributes.
 ```html
 <ContentPage.Padding>    
-   <OnPlatform x:TypeArguments=“Thickness”
+   <OnPlatform x:TypeArguments="Thickness"
       iOS="0, 20, 0, 0"
       Android="0, 40, 0, 0" 
    />
@@ -80,7 +80,7 @@ To differentiate between various devices, we can use **OnPlatform** tag:
     </OnPlatform>
 </ContentPage.Padding>
 ```
-## In Code:
+### In Code:
 We can use **Device.RuntimePlatform** method:
 ```csharp
 switch(Device.RuntimePlatform)
@@ -103,7 +103,7 @@ switch(Device.RuntimePlatform)
 ### In XAML:  
 Caching is enabled by default.
 ```html
-<Image Source=“http://...” />
+<Image Source="http://..." />
 ```
 ### In Code:
 Useful for disabling caching or overriding validity period. 
@@ -145,12 +145,12 @@ Add to each application project.
 - Resources/drawable-xhdpi/clock.png
 - Resources/drawable-xxhdpi/clock.png
 
-## In XAML:
+### In XAML:
 ```html
 <Image Source="clock.png" />
 ```
 
-## In Code:
+### In Code:
 ```csharp
 image.Source = ImageSource.FromFile("clock.png");
 ```
@@ -163,8 +163,90 @@ image.Source = ImageSource.FromFile("clock.png");
 ## Activity Indicator
 ```html
  <ActivityIndicator
-     Color=“White”
-     IsRunning=“{Binding
+     Color="White"
+     IsRunning="{Binding
                    Source={x:Reference image},
-                   Path=IsLoading}” />
+                   Path=IsLoading}" />
+```
+# Lists
+
+## A Basic List
+
+### In XAML:  
+```html
+<ListView x:Name="listView" /> 
+```
+### In Code:
+```csharp
+listView.ItemsSource = new List<string> { ... };
+```
+## Cell Types
+- TextCell
+- ImageCell
+```html
+<ListView>
+   <ListView.ItemTemplate>
+       <DataTemplate>
+           <TextCell Text="{Binding Name}"
+                      Detail="{Binding Status}" />
+       </DataTemplate>
+   </ListView.ItemTemplate>
+</ListView>
+```
+## Custom Cells 
+```html
+<DataTemplate>
+     <ViewCell>
+        <StackLayout>...</StackLayout>
+     </ViewCell>
+</DataTemplate>
+```
+
+## Grouping Items
+
+### In XAML:
+```html
+<ListView
+     IsGroupingEnabled="true"
+     GroupDisplayBinding="{Binding Title}"
+    GroupShortNameBinding="{Binding ShortTitle}" /> 
+```
+
+### In Code:
+```csharp
+listView.ItemsSource = new List<ContactGroup> {
+     new ContactGroup("A", "A")
+     {
+           new Contact { ... }
+     }
+ }
+```
+
+## Handling Selections
+```html
+ <ListView ItemTapped="..." ItemSelected="...">
+```
+
+## Context Actions
+```html
+ <TextCell>
+     <TextCell.ContextActions>
+           <MenuItem Text="Call" Clicked="..."
+              CommandParameter="{Binding .}" />          
+           <MenuItem Text="Delete" Clicked="..."
+              IsDestructive="true" />
+     </TextCell.ContextActions>
+</TextCell>
+```
+
+## Pull to Refresh
+```html
+ <ListView IsPullToRefreshEnabled="true" Refreshing="..."> 
+```
+```csharp
+ listView.EndRefresh();
+```
+## Search Bar
+```html
+ <SearchBar Placeholder="Search..." TextChanged="..." />
 ```
