@@ -3,7 +3,7 @@
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HelloWorld.RelativePage">
-   <RelativeLayout>
+  <!-- <RelativeLayout>
        <BoxView Color="Aqua" x:Name="banner"
                 RelativeLayout.WidthConstraint="{ConstraintExpression
                    Type=RelativeToParent,
@@ -24,6 +24,6 @@
                    Constant=20}" />
 
    </RelativeLayout>
-       
+       -->
 
 </ContentPage>
