@@ -5,6 +5,7 @@
     xmlns:local="clr-namespace:HelloWorld.MarkupExtensions"
     x:Class="HelloWorld.ImagePage">
 
-        <Image Source="{local:EmbeddedImage HelloWorld.Images.background.jpg}" x:Name="image" Aspect="AspectFill" />
+     <!--   <Image Source="{local:EmbeddedImage HelloWorld.Images.background.jpg}" x:Name="image" Aspect="AspectFill" />-->
+    <Button ImageSource="clock.png" />
 
 </ContentPage>
