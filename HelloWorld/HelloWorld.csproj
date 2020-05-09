@@ -41,6 +41,7 @@
     <Folder Include="Exercises\Relative Layout\" />
     <Folder Include="Images\" />
     <Folder Include="Markup Extensions\" />
+    <Folder Include="Exercises\Images\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />

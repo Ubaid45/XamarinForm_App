@@ -1,5 +1,6 @@
 ﻿using HelloWorld.Exercises.AbsoluteLayout;
 using HelloWorld.Exercises.GridLayout;
+using HelloWorld.Exercises.Images;
 using HelloWorld.Exercises.RelativeLayout;
 using HelloWorld.Exercises.StackLayout;
 using HelloWorld.Exercises.XAMLEssentials;
@@ -13,7 +14,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new RoundedImage();
+            MainPage = new ImagesExercise();
         }
 
         protected override void OnStart()
