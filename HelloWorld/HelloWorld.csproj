@@ -39,6 +39,7 @@
     <Folder Include="Exercises\XAML Essentials\" />
     <Folder Include="Exercises\Relative Layout\" />
     <Folder Include="Images\" />
+    <Folder Include="Markup Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />
