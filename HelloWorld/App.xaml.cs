@@ -15,7 +15,11 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new ListPage_Exercise();
+            MainPage = new NavigationPage(new WelcomePage())
+            {
+                BarBackgroundColor = Color.Black,
+                BarTextColor = Color.White
+            };
         }
 
         protected override void OnStart()
