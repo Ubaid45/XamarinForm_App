@@ -14,7 +14,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new ImagesExercise();
+            MainPage = new ListViewPage();
         }
 
         protected override void OnStart()
