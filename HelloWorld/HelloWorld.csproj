@@ -34,12 +34,6 @@
     <Compile Update="IntroductionPage.xaml.cs">
       <DependentUpon>IntroductionPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="MasterDetailPageDetail.xaml.cs">
-      <DependentUpon>MasterDetailPageDetail.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="MasterDetailPageMaster.xaml.cs">
-      <DependentUpon>MasterDetailPageMaster.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
