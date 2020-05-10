@@ -12,7 +12,7 @@ namespace HelloWorld
 
         IEnumerable<Contact> GetContacts(string searchText = null)
         {
-            var contacts= new ObservableCollection<Contact>
+            var contacts = new ObservableCollection<Contact>
             {
                 new Contact {Name= "Ubaid", ImageUrl = "http://lorempixel.com/100/100/people/1/"},
                 new Contact {Name= "Sibgha", ImageUrl = "http://lorempixel.com/100/100/people/2/", Status="Hey Sibgha, Lets talk"},
