@@ -28,6 +28,12 @@
     <Compile Update="Exercises\Relative Layout\RelativeLayout_Exercise.xaml.cs">
       <DependentUpon>RelativeLayout_Exercise.xaml</DependentUpon>
     </Compile>
+    <Compile Update="WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="IntroductionPage.xaml.cs">
+      <DependentUpon>IntroductionPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
