@@ -18,11 +18,5 @@ namespace HelloWorld
             InitializeComponent();
         }
 
-        async void Button_Clicked(System.Object sender, System.EventArgs e)
-        {
-            var response = await DisplayActionSheet("Title", "Cancel", "Delete", "Copy Link", "Message", "Email");
-               await DisplayAlert("Response", response, "Ok");
-
-        }
     }
 }
