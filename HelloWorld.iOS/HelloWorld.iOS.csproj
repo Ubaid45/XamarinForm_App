@@ -149,5 +149,11 @@
     <BundleResource Include="Resources\plus.png" />
     <BundleResource Include="Resources\plus%402x.png" />
     <BundleResource Include="Resources\plus%403x.png" />
+    <BundleResource Include="Resources\user.png" />
+    <BundleResource Include="Resources\user%402x.png" />
+    <BundleResource Include="Resources\user%403x.png" />
+    <BundleResource Include="Resources\heart.png" />
+    <BundleResource Include="Resources\heart%402x.png" />
+    <BundleResource Include="Resources\heart%403x.png" />
   </ItemGroup>
 </Project>

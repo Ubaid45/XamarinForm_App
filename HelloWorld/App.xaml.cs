@@ -5,6 +5,7 @@ using HelloWorld.Exercises.List;
 using HelloWorld.Exercises.RelativeLayout;
 using HelloWorld.Exercises.StackLayout;
 using HelloWorld.Exercises.XAMLEssentials;
+using InstagramApp;
 using Xamarin.Forms;
 
 namespace HelloWorld
