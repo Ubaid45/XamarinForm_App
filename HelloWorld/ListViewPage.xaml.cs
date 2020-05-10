@@ -35,5 +35,14 @@ namespace HelloWorld
         {
             listView.ItemsSource = GetContacts(e.NewTextValue);
         }
+
+        async void listView_ItemSelected(System.Object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+                return;
+            var contact = e.SelectedItem as Contact;
+            await Navigation.PushAsync(new ContactDetailPage(contact));
+            listView.SelectedItem = null;
+        }
     }
 }

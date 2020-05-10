@@ -5,7 +5,7 @@
     x:Class="HelloWorld.ListViewPage">
     <StackLayout Padding="0, 50,0, 0">
         <SearchBar Placeholder="Search ..." TextChanged="SearchBar_TextChanged"/>
-        <ListView x:Name="listView">
+        <ListView x:Name="listView" ItemSelected="listView_ItemSelected">
            <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}" Detail="{Binding Status}" />
