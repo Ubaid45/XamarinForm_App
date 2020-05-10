@@ -269,11 +269,11 @@ await Navigation.PopAsync();
 ## Navigation Bar
 ### Setting the title
 ```html
-<ContentPage Title=“Welcome”>
+<ContentPage Title="Welcome">
 ```
 ### Hiding the navigation bar
 ```html
-<ContentPage NavigationPage.HasNavigationBar=“false”>
+<ContentPage NavigationPage.HasNavigationBar="false">
 ```
 ### Changing the colors
 ```csharp
@@ -284,7 +284,7 @@ MainPage = new NavigationPage(new WelcomePage()) {
 ```
 ### Hiding the back button
 ```html
-<ContentPage NavigationPage.HasBackButton=“false”>
+<ContentPage NavigationPage.HasBackButton="false">
 ```
 ### Disabling the physical back button on Android and Windows:
 ```csharp
@@ -301,9 +301,9 @@ await Navigation.PopModalAsync();
 
 ## Master Detail 
 ```html
-<MasterDetailPage IsPresented=“true”>
+<MasterDetailPage IsPresented="true">
     <MasterDetailPage.Master>
-        <ContentPage Title=“Contacts”>
+        <ContentPage Title="Contacts">
             ... add a list view
         </ContentPage>
     </MasterDetailPage>
@@ -323,17 +323,17 @@ async void Handle_ItemSelected(...){
 
 ## Handling Selections
 ```html
- <ListView ItemTapped=“...” ItemSelected=“...”>
+ <ListView ItemTapped="..." ItemSelected="...">
 ```
 
 ## Context Actions
 ```html
  <TextCell>
      <TextCell.ContextActions>
-           <MenuItem Text=“Call” Clicked=“...”
-              CommandParameter=“{Binding .}” />          
-           <MenuItem Text=“Delete” Clicked=“...”
-              IsDestructive=“true” />
+           <MenuItem Text="Call" Clicked="..."
+              CommandParameter="{Binding .}" />          
+           <MenuItem Text="Delete" Clicked="..."
+              IsDestructive="true" />
      </TextCell.ContextActions>
 </TextCell>
 ```
@@ -341,10 +341,10 @@ async void Handle_ItemSelected(...){
 ## Tabbed Page
 ```html
 <TabbedPage ...
-    xmlns:local=“clr-namespace:HelloWorld”>
-    <local:ConctactsPage Title=“...” Icon=“...” />
-    <ContentPage Title=“...” Icon=“...”>...</ContentPage>
-    <NavigationPage Title=“...” Icon=“...”>
+    xmlns:local="clr-namespace:HelloWorld">
+    <local:ConctactsPage Title="..." Icon="..." />
+    <ContentPage Title="..." Icon="...">...</ContentPage>
+    <NavigationPage Title="..." Icon="...">
       <x:Arguments>
          <ContentPage>...</ContentPage>
       </x:Arguments>
@@ -355,9 +355,9 @@ async void Handle_ItemSelected(...){
 ## CarouselPage 
 ```html
 <CarouselPage ...
-    xmlns:local=“clr-namespace:HelloWorld”>
-    <local:ConctactsPage Title=“...” Icon=“...” />
-    <ContentPage Title=“...” Icon=“...”>...</ContentPage>
+    xmlns:local="clr-namespace:HelloWorld">
+    <local:ConctactsPage Title="..." Icon="..." />
+    <ContentPage Title="..." Icon="...">...</ContentPage>
 </CarouselPage> 
 ```
 
@@ -375,7 +375,7 @@ var response = await DisplayActionSheet(...);
 ```html
 <ContentPage>
     <ContentPage.ToolbarItems>
-         <ToolbarItem Icon=“...” Activated=“...” />
+         <ToolbarItem Icon="..." Activated="..." />
     </ContentPage.ToolbarItems>
 </ContentPage> 
 ```
