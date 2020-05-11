@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloWorld.FormsandSettingPages.InputPage">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Switch IsToggled="True" x:Name="switch"/>
-        <Label Text="Content" IsVisible="{Binding Source={x:Reference switch}, Path=IsToggled}" />
+        <StackLayout>
+            <Switch IsToggled="True" x:Name="switch"/>
+            <Label Text="Content" IsVisible="{Binding Source={x:Reference switch}, Path=IsToggled}" />
+        </StackLayout>
+        <StackLayout>
+            <Slider  x:Name="slider" Maximum="255" Minimum="10" Value="50"/>
+            <Label Text="{Binding Source={x:Reference slider}, Path=Value, StringFormat='{0:N0}'}" />
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
