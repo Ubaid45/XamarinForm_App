@@ -31,6 +31,30 @@
     <Compile Update="IntroductionPage.xaml.cs">
       <DependentUpon>IntroductionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Absolute Layout\AbsoluteLayout_Exercise1.xaml.cs">
+      <DependentUpon>..\..\Absolute Layout\AbsoluteLayout_Exercise1.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Absolute Layout\AbsoluteLayout_Exercise2.xaml.cs">
+      <DependentUpon>..\..\Absolute Layout\AbsoluteLayout_Exercise2.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Grid Layout\GridLayout_Exercise1.xaml.cs">
+      <DependentUpon>..\..\Grid Layout\GridLayout_Exercise1.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Grid Layout\GridLayout_Exercise2.xaml.cs">
+      <DependentUpon>..\..\Grid Layout\GridLayout_Exercise2.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Relative Layout\RelativeLayout_Exercise.xaml.cs">
+      <DependentUpon>..\..\Relative Layout\RelativeLayout_Exercise.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Stack Layout\StackLayout_Exercise1.xaml.cs">
+      <DependentUpon>..\..\Stack Layout\StackLayout_Exercise1.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Stack Layout\StackLayout_Exercise2.xaml.cs">
+      <DependentUpon>..\..\Stack Layout\StackLayout_Exercise2.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Forms and Setting Pages\InputPage.xaml.cs">
+      <DependentUpon>InputPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
@@ -49,6 +73,7 @@
     <Folder Include="Exercises\Layout\Grid Layout\" />
     <Folder Include="Exercises\Layout\Relative Layout\" />
     <Folder Include="Exercises\Layout\Stack Layout\" />
+    <Folder Include="Forms and Setting Pages\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />
