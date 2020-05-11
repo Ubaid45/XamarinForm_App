@@ -1,11 +1,4 @@
-﻿using HelloWorld.Exercises.AbsoluteLayout;
-using HelloWorld.Exercises.GridLayout;
-using HelloWorld.Exercises.Images;
-using HelloWorld.Exercises.List;
-using HelloWorld.Exercises.RelativeLayout;
-using HelloWorld.Exercises.StackLayout;
-using HelloWorld.Exercises.XAMLEssentials;
-using InstagramApp;
+﻿using InstagramApp;
 using Xamarin.Forms;
 
 namespace HelloWorld
