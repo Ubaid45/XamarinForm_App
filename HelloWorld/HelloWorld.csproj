@@ -51,7 +51,6 @@
     <EmbeddedResource Remove="StackedPage.xaml" />
     <EmbeddedResource Remove="Exercises\Forms and Settings Page\ContactBook\Views\ContactDetailPage.xaml" />
     <EmbeddedResource Remove="Basics\ListViewPage.xaml" />
-    <EmbeddedResource Remove="Basics\RelativePage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exercises\" />

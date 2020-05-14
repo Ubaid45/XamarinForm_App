@@ -11,7 +11,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new GridPage();
+            MainPage = new RelativePage();
         }
 
         protected override void OnStart()
