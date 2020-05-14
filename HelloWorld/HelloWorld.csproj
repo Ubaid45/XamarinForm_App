@@ -74,6 +74,7 @@
     <Folder Include="Exercises\Layout\Relative Layout\" />
     <Folder Include="Exercises\Layout\Stack Layout\" />
     <Folder Include="Forms and Setting Pages\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />

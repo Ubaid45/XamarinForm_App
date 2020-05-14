@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage Padding="50" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloWorld.FormsandSettingPages.InputPage">
+<ContentPage
+    xmlns:local="clr-namespace:HelloWorld.Extensions"
+    Padding="50" xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HelloWorld.FormsandSettingPages.InputPage">
     <StackLayout>
-        <StackLayout>
             <Switch IsToggled="True" x:Name="switch"/>
             <Label Text="Content" IsVisible="{Binding Source={x:Reference switch}, Path=IsToggled}" />
 
@@ -12,7 +15,22 @@
 
             <Stepper  x:Name="stepper" Increment="5"/>
             <Label Text="{Binding Source={x:Reference stepper}, Path=Value}" />
-        </StackLayout>
+
+            <Entry Keyboard="Numeric" Placeholder="Phone" />
+            <Entry IsPassword="True" Keyboard="Default" Placeholder="Password" />
+            <Entry Keyboard="Email" Placeholder="Email" />
+
+        <TableView Intent="Form" >
+            <TableRoot>
+                <TableSection Title="Basics" >
+                    <TextCell Text="Name" Detail="Ubaid Rana" />
+                    <EntryCell Label="Title" Placeholder="(eg shopping)" />
+                    <SwitchCell Text="Notifications" On="True" />
+                    <local:DateCell Label="Starts" />
+                    <local:DateCell Label="Ends" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
     </StackLayout>
 
 </ContentPage>
