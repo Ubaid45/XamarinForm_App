@@ -1,4 +1,5 @@
-﻿using HelloWorld.FormsandSettingPages;
+﻿
+using HelloWorld.FormsandSettingPages;
 using InstagramApp;
 using Xamarin.Forms;
 
@@ -10,7 +11,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new InputPage());
+            MainPage = new GridPage();
         }
 
         protected override void OnStart()

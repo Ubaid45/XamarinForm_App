@@ -16,20 +16,11 @@
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="Basics\ListViewPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="StackedPage.xaml.cs">
       <DependentUpon>StackedPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="StackPage.xaml.cs">
-      <DependentUpon>StackPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="RelativePage.xaml.cs">
-      <DependentUpon>RelativePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="WelcomePage.xaml.cs">
-      <DependentUpon>WelcomePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="IntroductionPage.xaml.cs">
-      <DependentUpon>IntroductionPage.xaml</DependentUpon>
     </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Exercises\Layout\Absolute Layout\AbsoluteLayout_Exercise1.xaml.cs">
       <DependentUpon>..\..\Absolute Layout\AbsoluteLayout_Exercise1.xaml</DependentUpon>
@@ -58,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
+    <EmbeddedResource Remove="Exercises\Forms and Settings Page\ContactBook\Views\ContactDetailPage.xaml" />
+    <EmbeddedResource Remove="Basics\ListViewPage.xaml" />
+    <EmbeddedResource Remove="Basics\RelativePage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exercises\" />
@@ -75,6 +69,8 @@
     <Folder Include="Exercises\Layout\Stack Layout\" />
     <Folder Include="Forms and Setting Pages\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Exercises\Forms and Settings Page\" />
+    <Folder Include="Basics\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />
