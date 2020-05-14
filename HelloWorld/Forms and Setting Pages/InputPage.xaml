@@ -4,33 +4,27 @@
     Padding="50" xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HelloWorld.FormsandSettingPages.InputPage">
-    <StackLayout>
-            <Switch IsToggled="True" x:Name="switch"/>
-            <Label Text="Content" IsVisible="{Binding Source={x:Reference switch}, Path=IsToggled}" />
-
-
-            <Slider  x:Name="slider" Maximum="255" Minimum="10" Value="50"/>
-            <Label Text="{Binding Source={x:Reference slider}, Path=Value, StringFormat='{0:N0}'}" />
-               
-
-            <Stepper  x:Name="stepper" Increment="5"/>
-            <Label Text="{Binding Source={x:Reference stepper}, Path=Value}" />
-
-            <Entry Keyboard="Numeric" Placeholder="Phone" />
-            <Entry IsPassword="True" Keyboard="Default" Placeholder="Password" />
-            <Entry Keyboard="Email" Placeholder="Email" />
-
-        <TableView Intent="Form" >
-            <TableRoot>
-                <TableSection Title="Basics" >
-                    <TextCell Text="Name" Detail="Ubaid Rana" />
-                    <EntryCell Label="Title" Placeholder="(eg shopping)" />
-                    <SwitchCell Text="Notifications" On="True" />
-                    <local:DateCell Label="Starts" />
-                    <local:DateCell Label="Ends" />
-                </TableSection>
-            </TableRoot>
-        </TableView>
-    </StackLayout>
+   	<TableView Intent="Form">
+		<TableRoot>
+			<TableSection Title="Basics">
+				<TextCell Text="Name" Detail="Ubaid Rana" />
+				<EntryCell Label="Title" Placeholder="(eg Shopping)" />
+				<SwitchCell Text="Notifications" On="true" />
+				<local:DateCell Label="Starts" />				
+				<local:DateCell Label="Ends" />	
+				<ViewCell Tapped="ViewCell_Tapped">
+					<StackLayout Orientation="Horizontal" Padding="13, 5">
+						<Label Text="Contact Method" VerticalOptions="Center" />
+						<Label 
+							x:Name="contactMethod"
+							VerticalOptions="Center" 
+							HorizontalOptions="EndAndExpand" 
+							Text="None" 
+							TextColor="Gray" />
+					</StackLayout>
+				</ViewCell>
+			</TableSection>
+		</TableRoot>
+	</TableView>
 
 </ContentPage>
