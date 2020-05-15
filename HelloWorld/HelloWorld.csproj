@@ -46,6 +46,9 @@
     <Compile Update="Forms and Setting Pages\InputPage.xaml.cs">
       <DependentUpon>InputPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Data Access\ApplicationPropertiesPage.xaml.cs">
+      <DependentUpon>ApplicationPropertiesPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
@@ -70,6 +73,7 @@
     <Folder Include="Extensions\" />
     <Folder Include="Exercises\Forms and Settings Page\" />
     <Folder Include="Basics\" />
+    <Folder Include="Data Access\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />

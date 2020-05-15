@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloWorld.DataAccess.ApplicationPropertiesPage">
+     	<TableView Intent="Form">
+		<TableRoot>
+			<TableSection>
+				<EntryCell x:Name="title" Text="{Binding Title}" Label="Title" Placeholder="(eg Shopping)" Completed="OnChange" />
+				<SwitchCell x:Name="notificationsEnabled" Text="Notifications" On="{Binding NotificationsEnabled}" OnChanged="OnChange" />
+				
+			</TableSection>
+		</TableRoot>
+	</TableView>
+</ContentPage>
