@@ -16,7 +16,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new WebServicePage();
+            MainPage = new NavigationPage (new Exercises.FormsandSettingsPage.ContactBookWithSQLite.ContactsPage());
         }
 
         protected override void OnStart()
