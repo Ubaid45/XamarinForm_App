@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using SQLite;
 using Xamarin.Forms;
 
@@ -57,13 +59,38 @@ namespace HelloWorld.DataAccess
 	}
 
     [Table("Recipes")]
-	public class Recipe
+	public class Recipe : INotifyPropertyChanged
 	{
+        public event PropertyChangedEventHandler PropertyChanged;
+
         [PrimaryKey, AutoIncrement, Column("RecipeId")]
 		public int Id { get; set; }
 
         [MaxLength(255)]
-		public string Name { get; set; }
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                if (_name == value)
+                    return;
+
+                _name = value;
+
+                OnPropertyChanged();
+            }
+        }
+
+        private void OnPropertyChanged([CallerMemberName]string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        private string _name;
+
 	}
 
 }
