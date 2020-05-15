@@ -8,6 +8,10 @@ namespace HelloWorld
 {
     public partial class App : Application
     {
+
+        private const string TitleKey = "Name";
+        private const string NotificationsEnabledKey = "NotificationsEnabled";
+
         public App()
         {
             InitializeComponent();
@@ -25,6 +29,38 @@ namespace HelloWorld
 
         protected override void OnResume()
         {
+        }
+
+        public string Title
+        {
+            get
+            {
+                if (Properties.ContainsKey(TitleKey))
+                    return Properties[TitleKey].ToString();
+
+                return "";
+            }
+
+            set
+            {
+                Properties[TitleKey] = value;
+            }
+        }
+
+        public string NotificationsEnabled
+        {
+            get
+            {
+                if (Properties.ContainsKey(NotificationsEnabledKey))
+                    return Properties[NotificationsEnabledKey].ToString();
+
+                return "";
+            }
+
+            set
+            {
+                Properties[NotificationsEnabledKey] = value;
+            }
         }
     }
 }
