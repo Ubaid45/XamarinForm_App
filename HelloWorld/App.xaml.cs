@@ -16,7 +16,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new SQLitePage();
+            MainPage = new WebServicePage();
         }
 
         protected override void OnStart()
