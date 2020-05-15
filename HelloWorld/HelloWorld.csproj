@@ -88,6 +88,7 @@
     <Folder Include="Data Access\" />
     <Folder Include="Persistence\" />
     <Folder Include="Exercises\Forms and Settings Page\ContactBookWithSQLite\" />
+    <Folder Include="Exercises\Netflix Roulette\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />
