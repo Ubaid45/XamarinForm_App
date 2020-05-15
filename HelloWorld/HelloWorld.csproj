@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
@@ -74,6 +75,7 @@
     <Folder Include="Exercises\Forms and Settings Page\" />
     <Folder Include="Basics\" />
     <Folder Include="Data Access\" />
+    <Folder Include="Persistence\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />
