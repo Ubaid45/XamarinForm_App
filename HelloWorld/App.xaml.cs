@@ -17,7 +17,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new SubscriberPage());
+            MainPage = new NavigationPage(new ContactBook.ContactsPage());
         }
 
         protected override void OnStart()
