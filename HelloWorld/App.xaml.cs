@@ -1,6 +1,8 @@
 ﻿
 using HelloWorld.Beyondthebasics;
 using HelloWorld.DataAccess;
+using HelloWorld.Exercises.Styles.After;
+using HelloWorld.Exercises.Styles.Before;
 using Xamarin.Forms;
 
 namespace HelloWorld
@@ -15,7 +17,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new StartPage();
+            MainPage = new AfterStylePage();
         }
 
         protected override void OnStart()

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace HelloWorld.Beyondthebasics
+namespace HelloWorld.Exercises.Styles.After
 {
-    public partial class StartPage : ContentPage
+    public partial class AfterStylePage : ContentPage
     {
-        public StartPage()
+        public AfterStylePage()
         {
             InitializeComponent();
         }
