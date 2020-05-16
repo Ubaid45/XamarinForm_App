@@ -17,7 +17,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new AfterStylePage();
+            MainPage = new NavigationPage(new SubscriberPage());
         }
 
         protected override void OnStart()
