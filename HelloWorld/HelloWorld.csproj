@@ -92,6 +92,7 @@
     <Folder Include="Persistence\" />
     <Folder Include="Exercises\Forms and Settings Page\ContactBookWithSQLite\" />
     <Folder Include="Exercises\Netflix Roulette\" />
+    <Folder Include="Beyond the basics\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />

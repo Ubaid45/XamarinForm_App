@@ -1,4 +1,5 @@
 ﻿
+using HelloWorld.Beyondthebasics;
 using HelloWorld.DataAccess;
 using Xamarin.Forms;
 
@@ -14,7 +15,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new WebServicePage());
+            MainPage = new StartPage();
         }
 
         protected override void OnStart()
