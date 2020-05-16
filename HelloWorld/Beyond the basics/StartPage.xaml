@@ -4,21 +4,20 @@
          <ResourceDictionary>
             <x:Int32 x:Key="borderRadius">20</x:Int32>
             <Color x:Key="buttonBackgroundColor">Green</Color>
+             <Style x:Key="button" TargetType="Button">
+                 <Setter Property="BackgroundColor" Value="{StaticResource buttonBackgroundColor}"/>
+                 <Setter Property="TextColor" Value="White"/>
+                 <Setter Property="BorderRadius" Value="{StaticResource borderRadius}"/>
+                 <Setter Property="FontAttributes" Value="bold"/>
+             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout Spacing="20" VerticalOptions="Center">
 		<Button Text="Login" 
-			BackgroundColor="{DynamicResource buttonBackgroundColor}"
-			TextColor="White" 
-			BorderRadius="{StaticResource borderRadius}"
-			FontAttributes="Bold" />
+			Style="{StaticResource button}" />
 
 		<Button Text="Register" 
-			BackgroundColor="{DynamicResource buttonBackgroundColor}" 
-			TextColor="White" 
-			BorderRadius="{StaticResource borderRadius}"
-			FontAttributes="Bold" />
+			Style="{StaticResource button}" />
 
-        <Button Text="Change Style" Clicked="Button_Clicked" />
 	</StackLayout>
 </ContentPage>

@@ -11,10 +11,5 @@ namespace HelloWorld.Beyondthebasics
         {
             InitializeComponent();
         }
-
-        void Button_Clicked(System.Object sender, System.EventArgs e)
-        {
-            Resources["buttonBackgroundColor"] = Color.Red;
-        }
     }
 }
