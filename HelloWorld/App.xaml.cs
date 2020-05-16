@@ -1,8 +1,5 @@
 ﻿
 using HelloWorld.DataAccess;
-using HelloWorld.Exercises.NetflixRoulette;
-using HelloWorld.FormsandSettingPages;
-using InstagramApp;
 using Xamarin.Forms;
 
 namespace HelloWorld
@@ -17,7 +14,7 @@ namespace HelloWorld
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new MoviesPage());
+            MainPage = new NavigationPage (new WebServicePage());
         }
 
         protected override void OnStart()

@@ -59,6 +59,9 @@
     <Compile Update="Exercises\Forms and Settings Page\ContactBookWithSQLite\ContactDetailsPage.xaml.cs">
       <DependentUpon>ContactDetailsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Exercises\Netflix Roulette\MovieDetailsPage.xaml.cs">
+      <DependentUpon>MovieDetailsPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="StackedPage.xaml" />
