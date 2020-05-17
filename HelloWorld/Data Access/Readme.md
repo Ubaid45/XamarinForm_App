@@ -81,7 +81,7 @@ public class Recipe: INotifyPropertyChanged {
 	}
 
 	private void OnPropertyChanged([CallerMemberName] propertyName = null) {
-		PropertyChanged ? .Invoke(this, new PropertyChangedEventArgs(propertyName);
+		PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName);
 	}
 }
 ```
@@ -93,7 +93,7 @@ var client = new HttpClient();
 
 // Get resources 
 var content = client.GetStringAsync(url);
-var posts = JsonConvert.DeserializeObject < List < Post >> ();
+var posts = JsonConvert.DeserializeObject <List<Post>> ();
 
 // Create a resource
 var post = new Post();
@@ -102,8 +102,8 @@ client.PostAsync(url, new StringContent(content));
 
 // Update a resource
 var content = JsonConvert.SerializeObject(post);
-client.PutAsync(url + " / " + post.Id, new StringContent(content));
+client.PutAsync(url + "/" + post.Id, new StringContent(content));
 
 // Delete a resource 
-client.DeleteAsync(url + " / " + post.Id);
+client.DeleteAsync(url + "/" + post.Id);
 ```
