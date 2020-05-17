@@ -1,10 +1,10 @@
-This project was practiced to learn how to develop cross-platform apps using **[Xamarin Forms](https://dotnet.microsoft.com/apps/xamarin/xamarin-forms)**. 
+This project was practiced to learn the cross-platform apps using **[Xamarin Forms](https://dotnet.microsoft.com/apps/xamarin/xamarin-forms)**. 
 
 The practiced concepts are:
 - **[XAML Essentials](https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Basics)**: Practiced basics of XAML
      - Data binding.
      - Binding with context.
-     - Handling Events
+     - Handling Events.
      - Content Property.
      - Dealing with device differences.
 - **[Layouts](https://github.com/Ubaid45/XamarinForm_App/tree/master/HelloWorld/Exercises/Layout)**: Used to arrange visual elements on the screen.
