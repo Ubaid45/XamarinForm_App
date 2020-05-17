@@ -22,6 +22,11 @@ The practiced concepts are used to solve the exercises of real-world apps:
      - Downloading images from internet.
      - Embed images in our application.
      - Icons.
+     - Exercise: Load random images with previous and next icons and show activity indicator while navigating to the next images.
+       <p>
+  <img src="https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/Images/Images.png" />
+</p>
+     Exercise solution: It is implemented **[here](https://github.com/Ubaid45/XamarinForm_App/tree/master/HelloWorld/Exercises/Images)**.
 - **[Lists](https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/List)**: Used to present data in beautiful interactive lists.
 - **[Navigation](https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/Navigation)**: Used to navigate the user from one page to another.
      - Master-Details page.
