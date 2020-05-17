@@ -7,7 +7,7 @@ The practiced concepts are:
      - Handling Events
      - Content Property.
      - Dealing with device differences.
-- **[Layouts]()**: Used to arrange visual elements on the screen.
+- **[Layouts](https://github.com/Ubaid45/XamarinForm_App/tree/master/HelloWorld/Exercises/Layout)**: Used to arrange visual elements on the screen.
      - Stack Layout.
      - Grid Layout.
      - Absolute Layout.
