@@ -12,6 +12,7 @@ The practiced concepts are used to solve the exercises of real-world apps:
      <p align="center">
    <img src="https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/XAML%20Essentials/Quotes%20App.png"  width="300" />
 </p>
+
 - **[Layouts](https://github.com/Ubaid45/XamarinForm_App/tree/master/HelloWorld/Exercises/Layout)**: Used to arrange visual elements on the screen.
      - Stack Layout.
      - Grid Layout.
@@ -26,6 +27,7 @@ The practiced concepts are used to solve the exercises of real-world apps:
       <p align="center">
   <img src="https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/Images/Images.png" width="300" />
 </p>
+
 - **[Lists](https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/List)**: Used to present data in beautiful interactive lists.
 - **[Navigation](https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/Navigation)**: Used to navigate the user from one page to another.
      - Master-Details page.
@@ -36,6 +38,7 @@ The practiced concepts are used to solve the exercises of real-world apps:
  <p align="center">
 <img src="https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/Navigation/InstagramApp%20Screenshot%201.png" width="300"/> <img src="https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/Navigation/InstagramApp%20Screenshot%202.png" width="300"/>
      </p>
+     
 - **[Forms and Settings pages](https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Forms%20and%20Setting%20Pages)**:
      - Switch, Slider, and Stepper.
      - Entry and Editor.
