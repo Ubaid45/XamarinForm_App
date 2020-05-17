@@ -31,3 +31,9 @@ The practiced concepts are:
      - File System.
      - SQLite Database.
      - Consuming RESTful services.
+- **[Beyond the basics](https://github.com/Ubaid45/XamarinForm_App/tree/master/HelloWorld/Beyond%20the%20basics)**:
+     - Resource Dictionary.
+     - Dynamic Resources.
+     - Explicit & Implicit styles.
+     - Messaging Center.
+     - Accessing common mobile device functionality.
