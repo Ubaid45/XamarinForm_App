@@ -8,10 +8,10 @@ The practiced concepts are used to solve the exercises of real-world apps:
      - Content Property.
      - Dealing with device differences.
      - Exercise: A simple app for browsing a list of quotes. The change of font-size input slider updated the font-size of quotes.
-     ![Quotes Screen](https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/XAML%20Essentials/Quotes%20App.png)
+     ![Quotes Screen]()
      Exercise solution: It is implemented **[here](https://github.com/Ubaid45/XamarinForm_App/tree/master/HelloWorld/Exercises/XAML%20Essentials)**.
      <p float="left">
-  <img src="/img1.png" width="100" />
+  <img src="/https://github.com/Ubaid45/XamarinForm_App/blob/master/HelloWorld/Exercises/XAML%20Essentials/Quotes%20App.png" width="100" />
   <img src="/img2.png" width="100" /> 
   <img src="/img3.png" width="100" />
 </p>
