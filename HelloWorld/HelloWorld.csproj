@@ -21,6 +21,7 @@
   <ItemGroup>
     <Compile Remove="Basics\ListViewPage.xaml.cs" />
     <Compile Remove="Exercises\Forms and Settings Page\ContactBookWithSQLite\Views\ContactsPage.xaml.cs" />
+    <Compile Remove="Exercises\Data Access\ContactBookWithSQLite\ContactsPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="StackedPage.xaml.cs">
@@ -53,12 +54,6 @@
     <Compile Update="Data Access\ApplicationPropertiesPage.xaml.cs">
       <DependentUpon>ApplicationPropertiesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Exercises\Forms and Settings Page\ContactBookWithSQLite\ContactsPage.xaml.cs">
-      <DependentUpon>ContactsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Exercises\Forms and Settings Page\ContactBookWithSQLite\ContactDetailsPage.xaml.cs">
-      <DependentUpon>ContactDetailsPage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Exercises\Netflix Roulette\MovieDetailsPage.xaml.cs">
       <DependentUpon>MovieDetailsPage.xaml</DependentUpon>
     </Compile>
@@ -69,6 +64,7 @@
     <EmbeddedResource Remove="Basics\ListViewPage.xaml" />
     <EmbeddedResource Remove="Exercises\Forms and Settings Page\ContactBookWithSQLite\Views\ContactsPage.xaml" />
     <EmbeddedResource Remove="Exercises\Forms and Settings Page\ContactBookWithSQLite\Views\ContactDetailPage.xaml" />
+    <EmbeddedResource Remove="Exercises\Data Access\ContactBookWithSQLite\ContactsPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exercises\" />
@@ -90,13 +86,14 @@
     <Folder Include="Basics\" />
     <Folder Include="Data Access\" />
     <Folder Include="Persistence\" />
-    <Folder Include="Exercises\Forms and Settings Page\ContactBookWithSQLite\" />
     <Folder Include="Exercises\Netflix Roulette\" />
     <Folder Include="Beyond the basics\" />
     <Folder Include="Exercises\Styles\" />
     <Folder Include="Exercises\Styles\Before\" />
     <Folder Include="Exercises\Styles\After\" />
     <Folder Include="Exercises\MessagingCenter\" />
+    <Folder Include="Exercises\Data Access\" />
+    <Folder Include="Exercises\Data Access\ContactBookWithSQLite\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\background.jpg" />
